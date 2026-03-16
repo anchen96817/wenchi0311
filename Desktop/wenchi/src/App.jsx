@@ -78,7 +78,7 @@ function computeTotal(cart){
   });
   return Object.values(groups).reduce((sum,g)=>sum+calcGroup(g.qty,g.unitPrice,g.bulkQty,g.bulkPrice),0);
 }
-const APPS_SCRIPT_URL = "貼上你的 Apps Script Web App URL";
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwPn4iaTXl5JgPaMCcEWopEjJ7DjUQsD3SjuAgdGyzGa5V1lK9wcJHv3B3QMYdBA/exec";
 function OrderPage({onBack}){
   const [cart,setCart]=useState([]);
   const [showCart,setShowCart]=useState(false);
